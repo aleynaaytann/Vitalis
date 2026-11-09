@@ -1,0 +1,12 @@
+﻿wp-config.php
+.env
+.env.*
+*.sql
+*.sql.gz
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup*
+*.bak
+*.log
+Thumbs.db
+.DS_Store

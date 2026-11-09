@@ -1,0 +1,20 @@
+html.vitalis-font-scale-active [data-vitalis-font-base]{font-size:var(--vitalis-scaled-font-size)!important}
+.vitalis-accessibility-controls{position:fixed;right:18px;bottom:18px;z-index:99990;width:54px;height:54px;font:600 13px/1.2 Arial,Helvetica,sans-serif}
+.vitalis-accessibility-toggle{position:absolute;right:0;bottom:0;z-index:2;display:grid;place-items:center;width:54px;height:54px;padding:0;border:1px solid rgba(255,255,255,.2);border-radius:50%;background:#10251f;color:#f3f6ee;box-shadow:0 8px 28px rgba(10,25,19,.3);font:700 22px/1 Arial,Helvetica,sans-serif;cursor:pointer;transition:background .18s ease,color .18s ease,transform .18s ease,opacity .16s ease}
+.vitalis-accessibility-toggle:hover{background:#183a2e;color:#d5e4bc;transform:scale(1.04)}
+.vitalis-toggle-close{display:none;font-size:24px;font-weight:400}
+.vitalis-accessibility-options{position:absolute;right:62px;bottom:0;display:flex;align-items:center;gap:7px;width:max-content;max-width:calc(100vw - 24px);padding:9px 11px;border:1px solid rgba(255,255,255,.18);border-radius:17px;background:#10251f;color:#fff;box-shadow:0 8px 28px rgba(10,25,19,.28);opacity:0;visibility:hidden;pointer-events:none;transform:translateX(8px) scale(.96);transform-origin:bottom right;transition:opacity .18s ease,transform .18s ease,visibility .18s}
+.vitalis-accessibility-controls.is-open .vitalis-accessibility-options,.vitalis-accessibility-controls:focus-within .vitalis-accessibility-options{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(0) scale(1)}
+.vitalis-accessibility-controls.is-open .vitalis-accessibility-toggle{border-radius:50%;background:#183a2e;color:#d5e4bc}
+.vitalis-accessibility-controls.is-open .vitalis-toggle-open{display:none}
+.vitalis-accessibility-controls.is-open .vitalis-toggle-close{display:block}
+.vitalis-accessibility-title{padding:0 3px;color:#edf3e8;font-size:12px;white-space:nowrap}
+.vitalis-font-button{display:grid;place-items:center;min-width:42px;min-height:42px;padding:0 8px;border:1px solid rgba(222,235,211,.45);border-radius:10px;background:#183a2e;color:#fff;font:700 16px/1 Arial,Helvetica,sans-serif;cursor:pointer;transition:background .15s ease,color .15s ease,transform .15s ease}
+.vitalis-font-button:hover:not(:disabled){background:#b8cb99;color:#102018;transform:translateY(-1px)}
+.vitalis-font-button:focus-visible,.vitalis-accessibility-toggle:focus-visible{outline:3px solid #e0efc8;outline-offset:3px}
+.vitalis-font-button:disabled{opacity:.45;cursor:not-allowed}
+.vitalis-font-reset{font-size:14px}
+.vitalis-font-status{min-width:42px;padding:0 4px;text-align:center;color:#d8e5c7;font-variant-numeric:tabular-nums;font-size:12px;white-space:nowrap}
+@media(hover:hover) and (pointer:fine){.vitalis-accessibility-controls:hover .vitalis-accessibility-options{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(0) scale(1)}}
+@media(max-width:560px){.vitalis-accessibility-controls{right:12px;bottom:12px;width:50px;height:50px}.vitalis-accessibility-toggle{width:50px;height:50px}.vitalis-accessibility-options{right:58px;gap:5px;padding:7px 8px;border-radius:15px}.vitalis-accessibility-title{display:none}.vitalis-font-button{min-width:42px;min-height:42px}}
+@media(prefers-reduced-motion:reduce){.vitalis-accessibility-toggle,.vitalis-accessibility-options,.vitalis-font-button{transition:none}}

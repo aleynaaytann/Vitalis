@@ -1,0 +1,33 @@
+body{font-family:Arial,Helvetica,sans-serif;color:#14211b;line-height:1.65}
+.wp-block{max-width:920px}
+.wp-block[data-align="wide"]{max-width:1180px}
+.wp-block[data-align="full"]{max-width:none}
+.vitalis-content-cover{min-height:390px;padding:52px 7%;color:#fff;background:#10211b}
+.vitalis-content-cover .wp-block-cover__image-background{object-position:center 45%}
+.vitalis-content-cover .wp-block-cover__inner-container{width:min(100%,1180px);margin:0 auto}
+.vitalis-content-cover .vitalis-content-eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;color:#d2dfbf}
+.vitalis-content-cover h1{max-width:780px;margin:8px 0 14px;font-size:clamp(38px,5vw,60px);line-height:1.06;color:#fff}
+.vitalis-content-cover .vitalis-content-lead{max-width:700px;color:#f1f4ee;font-size:18px}
+.vitalis-editor-section{max-width:1180px;margin:0 auto;padding:38px 24px}
+.vitalis-editor-section h2{font-size:clamp(25px,3vw,36px);line-height:1.12;margin:5px 0 14px;color:#14211b}
+.vitalis-editor-section p{color:#5d6962}
+.vitalis-content-eyebrow{margin:0 0 8px!important;color:#677e57!important;font-size:11px;font-weight:800;letter-spacing:.16em}
+.vitalis-content-cards,.vitalis-home-services,.vitalis-home-plans,.vitalis-membership-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:22px 0}
+.vitalis-content-cards>.wp-block-column,.vitalis-home-services>.wp-block-column,.vitalis-home-plans>.wp-block-column,.vitalis-membership-cards>.wp-block-column{margin:0!important}
+.vitalis-editor-card{height:100%;padding:22px;border:1px solid #e2e9e1;border-radius:14px;background:#f4f7f2}
+.vitalis-editor-card h3{margin:0 0 9px;font-size:20px;color:#15251d}
+.vitalis-editor-card .vitalis-card-price{font-weight:800;color:#315b3d}
+.vitalis-editor-card .wp-block-buttons{margin-top:16px}
+.vitalis-home-about-columns{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.vitalis-home-about-columns>.wp-block-column{margin:0!important}
+.vitalis-home-about-image{margin:0}
+.vitalis-home-about-image img{width:100%;height:350px;object-fit:cover;border-radius:14px}
+.vitalis-home-facilities .facility-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.vitalis-editor-module{max-width:1180px;margin:0 auto;padding:10px 24px 42px}
+.vitalis-editor-module .content-section{width:100%;padding-top:12px;padding-bottom:24px}
+.vitalis-editor-module .wrap{width:100%}
+.vitalis-demo-content-note{padding:14px 18px;border-left:4px solid #82996a;border-radius:8px;background:#f1f5ec}
+.wp-block-button__link{border-radius:9px;background:#b8cb99;color:#102018;font-weight:700}
+.wp-block-image figcaption{color:#66736a;font-size:12px}
+@media(max-width:780px){.vitalis-content-cover{min-height:330px;padding:34px 7%}.vitalis-home-about-columns,.vitalis-content-cards,.vitalis-home-services,.vitalis-home-plans,.vitalis-membership-cards{grid-template-columns:1fr 1fr;gap:12px}.vitalis-home-about-image img{height:260px}.vitalis-home-facilities .facility-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.vitalis-editor-section{padding:27px 16px}.vitalis-content-cards,.vitalis-home-services,.vitalis-home-plans,.vitalis-membership-cards,.vitalis-home-about-columns,.vitalis-home-facilities .facility-grid{grid-template-columns:1fr}.vitalis-editor-card{padding:18px}.vitalis-content-cover h1{font-size:38px}}

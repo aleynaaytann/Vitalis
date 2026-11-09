@@ -1,0 +1,61 @@
+.vitalis-admin-home{max-width:1240px}
+.vitalis-admin-intro{max-width:860px;color:#59675f;font-size:14px}
+.vitalis-admin-home h2{margin:28px 0 12px}
+.vitalis-report-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:1120px}
+.vitalis-report-grid-small{grid-template-columns:repeat(3,minmax(0,1fr))}
+.vitalis-report-card{display:flex;min-height:112px;flex-direction:column;justify-content:space-between;padding:16px 18px;background:#fff;border:1px solid #d8e1d9;border-radius:10px;text-decoration:none;color:#183a2b;box-shadow:0 1px 2px rgba(20,40,28,.04)}
+.vitalis-report-card:hover,.vitalis-report-card:focus{border-color:#91a986;color:#173c2d;box-shadow:0 3px 10px rgba(20,40,28,.08)}
+.vitalis-report-card>span{font-size:13px;font-weight:600}
+.vitalis-report-card strong{font-size:30px;line-height:1.15;color:#183a2b}
+.vitalis-report-card small{font-size:11px;line-height:1.4;color:#647269}
+.vitalis-admin-actions{margin:22px 0 14px}
+.vitalis-admin-home>.description{margin-top:12px}
+.vitalis-report-page{max-width:1500px}
+.vitalis-report-page .vitalis-report-grid{max-width:none;grid-template-columns:repeat(3,minmax(0,1fr))}
+.vitalis-report-nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 24px}
+.vitalis-report-nav a{display:inline-flex;padding:8px 13px;border:1px solid #d8e1d9;border-radius:7px;background:#fff;color:#1b4935;text-decoration:none;font-weight:600}
+.vitalis-report-nav a:hover,.vitalis-report-nav a:focus{border-color:#91a986;background:#f3f7f1}
+.vitalis-report-block{margin:20px 0 26px;padding:22px;background:#fff;border:1px solid #d8e1d9;border-radius:12px;box-shadow:0 1px 3px rgba(20,40,28,.04);scroll-margin-top:36px}
+.vitalis-report-block>h2{margin:0 0 8px;font-size:21px}
+.vitalis-report-section-note{color:#59675f;margin:5px 0 16px}
+.vitalis-monthly-report{margin-top:20px;padding:18px;border:1px solid #e1e8e1;border-radius:10px;background:#fbfcfa}
+.vitalis-monthly-report h3,.vitalis-report-section h3{margin:0 0 14px;font-size:16px}
+.vitalis-month-bars{display:grid;grid-template-columns:repeat(12,minmax(36px,1fr));gap:8px;align-items:end;min-height:150px;padding:12px 6px 0;border-bottom:1px solid #d8e1d9}
+.vitalis-month-bar{display:flex;height:132px;min-width:0;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;color:#526258}
+.vitalis-month-bar>strong{font-size:11px;line-height:1.1}
+.vitalis-month-bar-track{display:flex;width:min(100%,34px);height:88px;align-items:flex-end;overflow:hidden;border-radius:5px 5px 0 0;background:#edf2eb}
+.vitalis-month-bar-track i{display:block;width:100%;min-height:3px;border-radius:5px 5px 0 0;background:#91a986}
+.vitalis-month-bar small{font-size:10px;white-space:nowrap}
+.vitalis-monthly-report>.description{margin:10px 0 0}
+.vitalis-report-date-form{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:18px 0 8px}
+.vitalis-report-date-form label{font-weight:600}
+.vitalis-report-date-form input[type=date]{min-height:30px}
+.vitalis-report-date-range{margin:8px 0 18px;color:#263e32}
+.vitalis-report-section{margin-top:22px}
+.vitalis-report-table-wrap{max-width:100%;overflow:auto;border:1px solid #dfe6df;border-radius:9px}
+.vitalis-occupancy-table{min-width:1280px;border:0;border-collapse:separate;border-spacing:0}
+.vitalis-occupancy-table th,.vitalis-occupancy-table td{padding:10px 9px;vertical-align:top}
+.vitalis-occupancy-table thead th{position:sticky;top:0;z-index:2;background:#f2f6f1;color:#284638;text-align:center}
+.vitalis-occupancy-table thead th:first-child{left:0;z-index:3;min-width:180px;text-align:left}
+.vitalis-occupancy-table tbody th{position:sticky;left:0;z-index:1;background:#fff}
+.vitalis-report-item{min-width:180px;color:#183a2b}
+.vitalis-report-day{min-width:150px;max-width:205px;background:#fff}
+.vitalis-report-day>strong{display:block;margin-bottom:3px;font-size:12px}
+.vitalis-report-hours{display:block;margin-bottom:7px;color:#5f6f65;font-size:11px}
+.vitalis-report-available{color:#337247}
+.vitalis-report-full,.vitalis-report-closed{color:#a6443e}
+.vitalis-report-partial{color:#946b17}
+.vitalis-report-slots{display:flex;flex-wrap:wrap;gap:3px;max-width:185px}
+.vitalis-report-slot{display:inline-flex;min-width:23px;height:21px;align-items:center;justify-content:center;border:1px solid;border-radius:4px;font-size:10px;line-height:1;font-variant-numeric:tabular-nums}
+.vitalis-slot-free{border-color:#d2e3d1;background:#f1f7ef;color:#2e6941}
+.vitalis-slot-busy{border-color:#e7c9c5;background:#fbefed;color:#9b3d35}
+.vitalis-slot-demo{border-color:#ead5a5;background:#fbf4e3;color:#886318}
+.vitalis-report-outside{display:block;margin-top:6px;color:#965c20;font-size:10px;line-height:1.4}
+.vitalis-report-settings{background:#fbfcfa}
+.vitalis-report-settings .form-table th{width:220px}
+.vitalis-report-settings .form-table input[type=time]{margin:0 8px}
+@media(max-width:960px){.vitalis-report-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.vitalis-report-grid,.vitalis-report-grid-small{grid-template-columns:1fr}.vitalis-report-card{min-height:96px}}
+@media(max-width:782px){.vitalis-report-block{padding:14px}.vitalis-month-bars{grid-template-columns:repeat(6,minmax(36px,1fr));row-gap:10px}.vitalis-report-date-form{align-items:flex-start}.vitalis-report-settings .form-table th{width:auto}.vitalis-report-settings .form-table input[type=time]{margin:5px 8px 5px 0}}
+@media(max-width:960px){.vitalis-report-page .vitalis-report-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.vitalis-report-page .vitalis-report-grid{grid-template-columns:1fr}}

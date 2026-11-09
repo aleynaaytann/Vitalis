@@ -1,0 +1,1 @@
+<?php get_header();?><section class="wrap content-section"><span class="eyebrow">404</span><h1>Bu sayfayı bulamadık</h1><p>Aradığınız içerik taşınmış olabilir.</p><a class="btn" href="<?php echo esc_url(home_url('/'));?>">Ana Sayfaya Dön →</a></section><?php get_footer();?>

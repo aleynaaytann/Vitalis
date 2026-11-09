@@ -1,0 +1,134 @@
+/* Reservation page only: polish its guidance without changing other pages. */
+body.page-rezervasyon .vitalis-editable-page--rezervasyon .vitalis-reservation-info,
+body.page-rezervasyon .entry-content .vitalis-reservation-info{
+    width:min(1180px,92%);
+    max-width:1180px;
+    margin:clamp(24px,4vw,48px) auto;
+    padding:clamp(24px,4vw,42px);
+    border:1px solid #e1e9df;
+    border-radius:20px;
+    background:linear-gradient(135deg,#f8faf6 0%,#f0f4ed 100%);
+    box-shadow:0 14px 38px rgba(20,40,28,.07);
+}
+body.page-rezervasyon .vitalis-reservation-info h2{
+    margin:0 0 14px;
+    color:#14231c;
+    font-size:clamp(27px,3.3vw,38px);
+    line-height:1.12;
+    letter-spacing:-.025em;
+}
+body.page-rezervasyon .vitalis-reservation-info p{
+    max-width:1000px;
+    margin:0;
+    color:#58665e;
+    font-size:clamp(16px,1.5vw,18px);
+    line-height:1.75;
+}
+body.page-rezervasyon .vitalis-reservation-info--steps ul{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+    margin:24px 0 0;
+    padding:0;
+    list-style:none;
+    counter-reset:reservation-step;
+}
+body.page-rezervasyon .vitalis-reservation-info--steps li{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    min-height:70px;
+    margin:0;
+    padding:16px 18px;
+    border:1px solid #e0e8dc;
+    border-radius:14px;
+    background:#fff;
+    color:#26382e;
+    line-height:1.5;
+    counter-increment:reservation-step;
+}
+body.page-rezervasyon .vitalis-reservation-info--steps li::before{
+    content:counter(reservation-step);
+    display:grid;
+    flex:0 0 34px;
+    width:34px;
+    height:34px;
+    place-items:center;
+    border-radius:50%;
+    background:#eaf1e2;
+    color:#315b3d;
+    font-size:14px;
+    font-weight:800;
+}
+body.page-rezervasyon .vitalis-reservation-info--notice{
+    border-left:5px solid #8da675;
+    background:#f2f6ed;
+}
+body.page-rezervasyon .vitalis-reservation-info--notice h2{font-size:clamp(24px,2.7vw,32px)}
+/* Graceful fallback for content saved as individual Gutenberg blocks. */
+body.page-rezervasyon .vitalis-editable-page--rezervasyon:not(:has(.vitalis-reservation-info)),
+body.page-rezervasyon .entry-content:not(:has(.vitalis-reservation-info)){
+    max-width:1180px;
+    margin-inline:auto;
+    padding-inline:clamp(20px,4vw,48px);
+}
+body.page-rezervasyon .vitalis-editable-page--rezervasyon:not(:has(.vitalis-reservation-info))>.wp-block-heading,
+body.page-rezervasyon .entry-content:not(:has(.vitalis-reservation-info))>.wp-block-heading{
+    margin:38px 0 14px;
+    color:#14231c;
+    font-size:clamp(27px,3.3vw,38px);
+    line-height:1.12;
+}
+body.page-rezervasyon .vitalis-editable-page--rezervasyon:not(:has(.vitalis-reservation-info))>.wp-block-heading+p,
+body.page-rezervasyon .entry-content:not(:has(.vitalis-reservation-info))>.wp-block-heading+p{
+    color:#58665e;
+    font-size:clamp(16px,1.5vw,18px);
+    line-height:1.75;
+}
+body.page-rezervasyon .vitalis-editable-page--rezervasyon:not(:has(.vitalis-reservation-info))>.wp-block-list,
+body.page-rezervasyon .entry-content:not(:has(.vitalis-reservation-info))>.wp-block-list{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+    margin:24px 0;
+    padding:0;
+    list-style:none;
+    counter-reset:reservation-step;
+}
+body.page-rezervasyon .vitalis-editable-page--rezervasyon:not(:has(.vitalis-reservation-info))>.wp-block-list li,
+body.page-rezervasyon .entry-content:not(:has(.vitalis-reservation-info))>.wp-block-list li{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    min-height:70px;
+    margin:0;
+    padding:16px 18px;
+    border:1px solid #e0e8dc;
+    border-radius:14px;
+    background:#f7f9f5;
+    color:#26382e;
+    line-height:1.5;
+    counter-increment:reservation-step;
+}
+body.page-rezervasyon .vitalis-editable-page--rezervasyon:not(:has(.vitalis-reservation-info))>.wp-block-list li::before,
+body.page-rezervasyon .entry-content:not(:has(.vitalis-reservation-info))>.wp-block-list li::before{
+    content:counter(reservation-step);
+    display:grid;
+    flex:0 0 34px;
+    width:34px;
+    height:34px;
+    place-items:center;
+    border-radius:50%;
+    background:#eaf1e2;
+    color:#315b3d;
+    font-size:14px;
+    font-weight:800;
+}
+
+@media(max-width:700px){
+    body.page-rezervasyon .vitalis-editable-page--rezervasyon .vitalis-reservation-info,
+    body.page-rezervasyon .entry-content .vitalis-reservation-info{width:92%;margin:18px auto;padding:22px 18px;border-radius:15px}
+    body.page-rezervasyon .vitalis-reservation-info--steps ul,
+    body.page-rezervasyon .vitalis-editable-page--rezervasyon:not(:has(.vitalis-reservation-info))>.wp-block-list,
+    body.page-rezervasyon .entry-content:not(:has(.vitalis-reservation-info))>.wp-block-list{grid-template-columns:1fr;gap:9px}
+}
